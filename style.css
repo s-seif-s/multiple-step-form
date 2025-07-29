@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Ubuntu Bold';
+    src: url('assets/fonts/Ubuntu-Bold.ttf') format('truetype'); /* adjust extension */
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu Medium';
+    src: url('assets/fonts/Ubuntu-Medium.ttf') format('truetype'); /* adjust extension */
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('assets/fonts/Ubuntu-Regular.ttf') format('truetype'); /* adjust extension */
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(218, 100%, 97%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+.container-all {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 15px;
+    position: relative;
+}
+.side-bar {
+    background-image: url(assets/images/bg-sidebar-desktop.svg);
+    background-size: cover;
+    height: 470px;
+    width: 227px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.step {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.ball {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    font-family: sans-serif;
+    font-size: small;
+}
+.one .ball {
+    background-color: hsl(228, 100%, 90%);
+    color: hsl(213, 96%, 16%);
+}
+.inf span{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 11px;
+    color: hsl(231, 100%, 99%,0.8);
+}
+.inf p{
+    font-family: "Ubuntu Medium", sans-serif;
+    font-size: small;
+    color: white;
+}
+.first-step {
+    width: 530px;
+    height: 470px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 12px;
+    padding: 25px 35px;
+}
+.first-step h1 {
+    font-family: "Ubuntu Bold";
+    color: hsl(213, 96%, 16%);
+}
+.first-step p{
+    font-family: "Ubuntu";
+    font-size: small;
+    color: hsl(231, 11%, 63%);
+    margin: 10px 0 20px;
+}
+.first-step label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Ubuntu";
+    font-size: small;
+    letter-spacing: normal;
+    color: hsl(213, 96%, 16%);
+}
+.first-step input {
+    width: 410px;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid hsl(228, 100%, 90%);
+    outline: none;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    font-family: "Ubuntu Bold";
+    color: hsl(213, 96%, 16%);
+    letter-spacing: 0.7px;
+}
+.next {
+    background-color: hsl(213, 96%, 16%);
+    color: hsl(218, 100%, 97%) !important;
+    width: 100px !important;
+    height: 40px !important;
+    padding-left: 0 !important;
+    margin: 0 0 0 310px !important;
+}
