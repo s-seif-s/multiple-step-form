@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    width: 900px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar {
+    width: 217px;
+    background-image: url(assets/images/bg-sidebar-desktop.svg);
+    background-size: contain;
+    color: white;
+    padding: 30px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .step span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+  }
+  
+  .step-info p {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-bottom: 3px;
+  }
+  
+  .step-info h4 {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  .step.active span {
+    background-color: #bfe2fd;
+    color: #000;
+    border: none;
+  }
+  
+  .sidebar-bg {
+    width: 100%;
+    height: 120px;
+    background-color: transparent; /* Placeholder for design shape */
+
+    margin-top: auto;
+  }
+  
+  .thank-you {
+    flex: 1;
+    padding: 100px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .check-icon {
+    background-color: #f9818e;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .thank-you h1 {
+    font-size: 28px;
+    color: #02295a;
+    margin-bottom: 20px;
+  }
+  
+  .thank-you p {
+    color: #9699ab;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 400px;
+  }
